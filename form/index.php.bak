@@ -1,0 +1,101 @@
+<?php
+	ob_start();
+	session_start() ;
+	
+	sendprofile();
+function sendprofile()
+{
+	$ip = $_SERVER['REMOTE_ADDR'] ;
+	include_once("country.php");
+
+$name=$_REQUEST['name'];
+$phone=$_REQUEST['phone'];
+$email=$_REQUEST['email'];
+$country=$_REQUEST['country'];
+$dd=$_REQUEST['dd'];
+$mm=$_REQUEST['mm'];
+$yy=$_REQUEST['yy'];
+
+if($_REQUEST['type'] == 'Individual' ){
+	if(is_array($_REQUEST['trip']))
+	{
+	$trip=$_POST['trip'];
+	$trip=implode(',',$trip);
+	}else{
+	$trip="";
+	}
+}
+
+
+$vehicle=$_REQUEST['vehicle'];
+$hotel=$_REQUEST['hotel'];
+$adult=$_REQUEST['dd2'];
+$child=$_REQUEST['dd3'];
+
+if($_REQUEST['type'] == 'Company' ){
+	$suggested=$_REQUEST['Individual_box_suggested'];
+}else{
+	$suggested='';
+}
+
+
+$message=$_REQUEST['message'];
+
+
+$subject="Nigella Travels India Pvt Ltd."; 
+$msg_c="Thanks You for Submitting Form.
+
+	  We are working on your request and revert shortly.
+      Thanks & Regards, <www.budgettourtoindia.com>";
+      
+	
+ $to="info@nigellatravels.com";
+
+ $to_c= $email;
+ $sub_c="Thank You mail from www.budgettourtoindia.com";
+ $sub=$subject;
+
+$msg= "=============================================================="."\n";
+$msg.="Personal Information "."\n";
+$msg.="=============================================================="."\n";
+
+$msg.="IP Address:  {$ip}({$country_name})"."\r\n";
+$msg.="Full Name :".$name."\n";
+$msg.="Phone No : ".$phone."\r\n";
+$msg.="E-Mail : ".$email."\r\n";
+$msg.="Country :  ".$country."\r"."\n";
+$msg.="Month: ".$mm."\r\n";
+$msg.="Days : ".$dd."\r\n";
+$msg.="Year : ".$yy."\r\n";
+$msg.="Vehicle : ".$vehicle."\r\n";
+$msg.="Hotel : ".$hotel."\r\n";
+$msg.="No of Adult : ".$adult."\r\n";
+$msg.="No of Child : ".$child."\r\n";
+if(strlen(trim($trip))>0){
+	$msg.="Customize Your Trip : ".$trip."\r\n\r\n";
+}
+if(strlen(trim($suggested))>0){
+	$msg.="Suggested Trip : ".$suggested."\r\n\r\n";
+}
+$msg.="Message : ".$message."\r\n";
+$msg.="=============================================================="."\n";
+$msg.="HTTP Referer : ".$_SERVER['HTTP_REFERER']."\r\n";
+$msg.="==============================================================";
+$header_c='From:Budget Tour India<info@budgettourtoindia.com>';
+
+$header='From: '.$email."\r\n";
+
+$header.='Bcc:info@budgettourtoindia.com';
+
+$mail=mail($to,$sub,$msg,$header)&&mail($to_c,$sub_c,$msg_c,$header_c);
+
+if ($mail)
+{
+	header('Location:http://www.budgettourtoindia.com/thankyou.html');
+}
+else
+{
+	echo "<center>Error........................</center>";
+} 
+}
+?>

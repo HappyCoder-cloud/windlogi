@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>About Us | Windwalker Logistics Solutions Pvt. Ltd.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <!-- Bootstrap CSS -->
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+  />
+
+  <!-- Bootstrap Icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css"
+  />
+
+  <!-- Global site styles -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- ============== TOP BAR ============== -->
+  <div class="ww-topbar py-1">
+    <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
+      <div class="d-flex flex-wrap align-items-center gap-2">
+        <span class="me-2">
+          24x7 Customer Care: <strong>+91 8800389126</strong>
+        </span>
+        <span class="d-none d-md-inline text-secondary">
+          | An ISO 9001:2008 Certified Company
+        </span>
+      </div>
+      <div class="d-flex flex-wrap align-items-center gap-2">
+        <span class="ww-time-pill">
+          <span class="me-1">🇮🇳 India</span>
+          <span id="timeIndia">--:--</span>
+        </span>
+        <span class="ww-time-pill">
+          <span class="me-1">🇨🇳 China</span>
+          <span id="timeChina">--:--</span>
+        </span>
+        <span class="ww-time-pill">
+          <span class="me-1">🇦🇪 Dubai</span>
+          <span id="timeDubai">--:--</span>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============== NAVBAR ============== -->
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <span class="ww-logo-wrap">
+          <img src="images/logo.jpg" alt="Windwalker Logistics logo" class="ww-logo-img" />
+         
+        </span>
+      </a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNav"
+        aria-controls="mainNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" href="about.html">About Us</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="servicesDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Services
+            </a>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesDropdown">
+              <li><a class="dropdown-item" href="air-freight.html">Air Freight</a></li>
+              <li><a class="dropdown-item" href="ocean-freight.html">Ocean Freight</a></li>
+              <li><a class="dropdown-item" href="trucking.html">Trucking</a></li>
+              <li><a class="dropdown-item" href="customs-brokerage.html">Customs Brokerage</a></li>
+              <li><a class="dropdown-item" href="customs-excise-clearance.html">Customs &amp; Excise Clearance</a></li>
+              <li><a class="dropdown-item" href="warehousing.html">Warehousing</a></li>
+            </ul>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+
+        <div class="d-flex align-items-center ms-lg-3 mt-2 mt-lg-0 gap-2">
+          <button class="btn btn-sm ww-cta-phone d-none d-lg-inline-flex align-items-center">
+            <i class="bi bi-telephone-outbound me-2"></i>
+            +91 8800389126
+          </button>
+          <a href="#quote" class="btn btn-sm btn-ww-primary">
+            Request a Quote
+          </a>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============== PAGE HERO (ABOUT) ============== -->
+  <section class="ww-section bg-ww-dark text-white">
+    <div class="container">
+      <div class="row align-items-center g-3">
+        <div class="col-lg-8">
+          <p class="ww-eyebrow mb-2" style="color:#cbd5f5;">About Windwalker Logistics</p>
+          <h1 class="ww-section-title mb-2" style="color:#f9fafb;">
+            Your logistics partner for reliable, end-to-end freight solutions.
+          </h1>
+          <p class="ww-section-subtitle mb-0" style="color:#e5edf5;">
+            Windwalker Logistics Solutions Pvt. Ltd. is a customer-centric freight
+            forwarder and logistics provider, offering integrated air, ocean, trucking,
+            customs and warehousing services with a single point of control.
+          </p>
+        </div>
+        <div class="col-lg-4 text-lg-end">
+          <div class="small text-muted mb-1" style="color:#cbd5f5 !important;">
+            Home / <span class="text-ww-primary">About Us</span>
+          </div>
+          <div class="d-inline-flex flex-column align-items-lg-end">
+            <span class="ww-tag-chip mb-1">
+              <i class="bi bi-patch-check-fill text-ww-primary me-1"></i>
+              ISO 9001:2008 – Quality driven operations
+            </span>
+            <span class="ww-tag-chip">
+              <i class="bi bi-globe2 text-ww-primary me-1"></i>
+              Global freight forwarding &amp; customs expertise
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== COMPANY OVERVIEW ============== -->
+  <section class="ww-section">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-7">
+          <div class="ww-section-header mb-3">
+            <p class="ww-eyebrow mb-1">Who we are</p>
+            <h2 class="ww-section-title mb-2">
+              A single, accountable partner for your supply chain.
+            </h2>
+            <p class="ww-section-subtitle">
+              Windwalker Logistics was founded with one clear objective: to simplify
+              global trade for customers by offering reliable, transparent and
+              cost-effective logistics solutions. Instead of dealing with separate
+              providers for air, ocean, customs and trucking, our customers work with
+              one integrated team that understands their business and owns every step
+              of the journey.
+            </p>
+          </div>
+
+          <p class="ww-section-subtitle">
+            We combine global freight forwarding capabilities with strong local
+            expertise at key ports, airports and ICDs. Our operations and customer
+            service teams are trained to anticipate issues, communicate proactively
+            and keep shipments moving – from booking and documentation to final
+            delivery and POD.
+          </p>
+
+          <p class="ww-section-subtitle mb-0">
+            Over the years, we have built long-term relationships with customers
+            across different industries by being honest, accessible and focused on
+            results. Many of our customers consider us an extension of their own
+            logistics or supply chain team.
+          </p>
+        </div>
+
+        <div class="col-lg-5">
+          <div class="bg-white rounded-4 p-3 p-md-4 border border-light-subtle h-100">
+            <p class="ww-eyebrow mb-2">At a glance</p>
+            <div class="row g-3">
+              <div class="col-6">
+                <div class="ww-kpi-number" style="color:var(--ww-dark);">10+ years</div>
+                <div class="ww-kpi-label" style="color:var(--ww-muted);">Industry experience</div>
+              </div>
+              <div class="col-6">
+                <div class="ww-kpi-number" style="color:var(--ww-dark);">24x7</div>
+                <div class="ww-kpi-label" style="color:var(--ww-muted);">Customer support</div>
+              </div>
+              <div class="col-6">
+                <div class="ww-kpi-number" style="color:var(--ww-dark);">End-to-End</div>
+                <div class="ww-kpi-label" style="color:var(--ww-muted);">Pickup to delivery</div>
+              </div>
+              <div class="col-6">
+                <div class="ww-kpi-number" style="color:var(--ww-dark);">Multi-modal</div>
+                <div class="ww-kpi-label" style="color:var(--ww-muted);">Air · Ocean · Land</div>
+              </div>
+            </div>
+
+            <hr class="my-3" />
+
+            <p class="ww-section-subtitle mb-2">
+              <i class="bi bi-geo-alt text-ww-primary me-1"></i>
+              Headquartered in New Delhi with strong partner coverage on key
+              international trade lanes.
+            </p>
+            <p class="ww-section-subtitle mb-0">
+              <i class="bi bi-shield-check text-ww-primary me-1"></i>
+              ISO 9001:2008 quality management practices guide our operations,
+              documentation and customer service.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== MISSION, VISION, VALUES ============== -->
+  <section class="ww-section bg-white">
+    <div class="container">
+      <div class="ww-section-header mb-4">
+        <p class="ww-eyebrow mb-1">Our foundation</p>
+        <h2 class="ww-section-title mb-2">
+          Mission, vision and values that guide every shipment.
+        </h2>
+      </div>
+
+      <div class="row g-3">
+        <div class="col-md-4">
+          <div class="ww-service-card h-100">
+            <div class="ww-feature-icon">
+              <i class="bi bi-bullseye"></i>
+            </div>
+            <h3 class="ww-service-title">Our mission</h3>
+            <p class="ww-service-text mb-0">
+              To be the preferred logistics partner for our customers by shortening
+              the overall transaction cycle, minimizing operational cost and delivering
+              consistent service quality on every shipment.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="ww-service-card h-100">
+            <div class="ww-feature-icon">
+              <i class="bi bi-binoculars"></i>
+            </div>
+            <h3 class="ww-service-title">Our vision</h3>
+            <p class="ww-service-text mb-0">
+              To build an agile, technology-enabled logistics network that connects
+              businesses to global markets with complete visibility, compliance and
+              confidence.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="ww-service-card h-100">
+            <div class="ww-feature-icon">
+              <i class="bi bi-heart-pulse"></i>
+            </div>
+            <h3 class="ww-service-title">Our values</h3>
+            <p class="ww-service-text mb-1">
+              We work with:
+            </p>
+            <ul class="ww-service-text ps-3 mb-0">
+              <li>Integrity &amp; honesty in every transaction</li>
+              <li>Respect for customers, partners &amp; colleagues</li>
+              <li>Ownership, accountability and continuous improvement</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== HOW WE DELIVER VALUE ============== -->
+  <section class="ww-section">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-6">
+          <div class="ww-section-header mb-3">
+            <p class="ww-eyebrow mb-1">How we operate</p>
+            <h2 class="ww-section-title mb-2">
+              Process-driven, transparent and proactive.
+            </h2>
+            <p class="ww-section-subtitle mb-0">
+              Our teams follow clearly defined SOPs from enquiry to delivery, supported
+              by checklists and documentation controls. This reduces errors, speeds up
+              customs clearance and keeps everyone aligned on milestones and
+              responsibilities.
+            </p>
+          </div>
+
+          <div class="ww-step">
+            <div class="ww-step-dot"></div>
+            <div class="ww-step-label">1. Discovery &amp; solution design</div>
+            <p class="ww-step-text mb-0">
+              We analyse your products, trade lanes, Incoterms and service level
+              expectations, then design the most suitable service mix across air,
+              ocean, road and warehousing.
+            </p>
+          </div>
+
+          <div class="ww-step">
+            <div class="ww-step-dot"></div>
+            <div class="ww-step-label">2. Booking, documentation &amp; compliance</div>
+            <p class="ww-step-text mb-0">
+              Our operations and customs specialists manage bookings, export /
+              import documentation, HS classification and regulatory compliance to
+              avoid delays and penalties.
+            </p>
+          </div>
+
+          <div class="ww-step">
+            <div class="ww-step-dot"></div>
+            <div class="ww-step-label">3. Execution, tracking &amp; exception handling</div>
+            <p class="ww-step-text mb-0">
+              Shipments are monitored through each leg, with proactive updates on
+              departures, arrivals and customs status. Any exceptions are escalated
+              early and resolved with clear communication.
+            </p>
+          </div>
+
+          <div class="ww-step">
+            <div class="ww-step-dot"></div>
+            <div class="ww-step-label">4. Review &amp; continuous improvement</div>
+            <p class="ww-step-text mb-0">
+              We review KPIs like transit time, on-time performance and cost per kg /
+              CBM with our customers, recommending improvements as cargo profiles or
+              market conditions change.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6">
+          <div class="ww-service-card h-100">
+            <div class="ww-feature-icon">
+              <i class="bi bi-diagram-3"></i>
+            </div>
+            <h3 class="ww-service-title">What sets us apart</h3>
+            <ul class="ww-service-text ps-3 mb-2">
+              <li>Single point of contact for air, ocean, trucking and customs.</li>
+              <li>Strong relationships with airlines, shipping lines and local partners.</li>
+              <li>Structured documentation &amp; quality checks aligned with ISO standards.</li>
+              <li>Flexible solutions for SMEs as well as larger enterprises.</li>
+              <li>Transparent costing and clear communication at every stage.</li>
+            </ul>
+
+            <hr class="my-3" />
+
+            <p class="ww-service-text mb-2">
+              <i class="bi bi-graph-up-arrow text-ww-primary me-1"></i>
+              Our focus is not just on moving cargo but on improving your overall
+              logistics performance – transit time, reliability and total landed cost.
+            </p>
+
+            <a href="services.html" class="ww-service-link">
+              Explore our service capabilities <i class="bi bi-arrow-right-short"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== CTA / QUOTE (SHARED WITH HOME JS) ============== -->
+  <section id="quote" class="ww-section pt-0">
+    <div class="container">
+      <div class="ww-cta-band d-flex flex-column flex-lg-row justify-content-between align-items-start gap-3">
+        <div>
+          <p class="ww-eyebrow mb-1" style="color:#e5edf5;">Work with us</p>
+          <h3 class="mb-2" style="font-size:1.3rem;">
+            Planning a new trade lane or reviewing your current logistics setup?
+          </h3>
+          <p class="mb-0" style="font-size:0.9rem;color:#cbd5f5;">
+            Share your requirements and our team will connect with you to understand
+            your cargo, routes and expectations, and suggest the best options.
+          </p>
+        </div>
+        <div class="w-100 w-lg-50">
+          <form class="row g-2 g-md-3">
+            <div class="col-md-6">
+              <label class="form-label small text-light mb-1">Name</label>
+              <input type="text" class="form-control form-control-sm" placeholder="Your full name" />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-light mb-1">Company</label>
+              <input type="text" class="form-control form-control-sm" placeholder="Company name" />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-light mb-1">Email</label>
+              <input type="email" class="form-control form-control-sm" placeholder="you@company.com" />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-light mb-1">Phone</label>
+              <input type="tel" class="form-control form-control-sm" placeholder="+91 ..." />
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-light mb-1">Primary service</label>
+              <select class="form-select form-select-sm">
+                <option selected>Choose service</option>
+                <option>Air Freight</option>
+                <option>Ocean Freight</option>
+                <option>Trucking</option>
+                <option>Customs Brokerage</option>
+                <option>Customs &amp; Excise Clearance</option>
+                <option>Warehousing</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label class="form-label small text-light mb-1">Trade lane / route</label>
+              <input type="text" class="form-control form-control-sm" placeholder="e.g. Mumbai – Hamburg" />
+            </div>
+            <div class="col-12">
+              <label class="form-label small text-light mb-1">Brief requirement</label>
+              <textarea class="form-control form-control-sm" rows="2" placeholder="Shipment frequency, commodity, volume, challenges..."></textarea>
+            </div>
+            <div class="col-12 d-flex flex-wrap justify-content-between align-items-center mt-1">
+              <div class="form-check form-check-sm text-light">
+                <input class="form-check-input" type="checkbox" id="quoteAgree" checked />
+                <label class="form-check-label small" for="quoteAgree">
+                  I agree to be contacted by Windwalker Logistics.
+                </label>
+              </div>
+              <button type="submit" class="btn btn-sm btn-ww-primary mt-2 mt-md-0">
+                Submit enquiry
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============== FOOTER ============== -->
+  <footer class="ww-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div class="mb-2">
+            <span class="ww-logo-wrap">
+              <img src="images/logo.jpg" alt="Windwalker Logistics" class="ww-logo-img" />
+              
+            </span>
+          </div>
+          <p class="small mb-2">
+            Windwalker Logistics Solutions Pvt. Ltd. provides tailor-made freight
+            forwarding and logistics solutions, ensuring your cargo reaches customers
+            at the right place and the right time.
+          </p>
+          <p class="small mb-2">
+            Office: Mahipalpur Extension, South West Delhi, India<br/>
+            Email: <a href="mailto:info@windwalkerlogistics.com">info@windwalkerlogistics.com</a><br/>
+            Phone: <a href="tel:+918800389126">+91 8800389126</a>
+          </p>
+          <div class="d-flex gap-2 mt-2">
+            <a href="#" class="ww-social" aria-label="LinkedIn">
+              <i class="bi bi-linkedin"></i>
+            </a>
+            <a href="#" class="ww-social" aria-label="Facebook">
+              <i class="bi bi-facebook"></i>
+            </a>
+            <a href="#" class="ww-social" aria-label="Twitter">
+              <i class="bi bi-twitter-x"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-6 col-md-2">
+          <h6>Company</h6>
+          <ul class="list-unstyled mb-0">
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+            <li><a href="#quote">Request a Quote</a></li>
+          </ul>
+        </div>
+
+        <div class="col-6 col-md-3">
+          <h6>Services</h6>
+          <ul class="list-unstyled mb-0">
+            <li><a href="air-freight.html">Air Freight</a></li>
+            <li><a href="ocean-freight.html">Ocean Freight</a></li>
+            <li><a href="trucking.html">Trucking</a></li>
+            <li><a href="customs-brokerage.html">Customs Brokerage</a></li>
+            <li><a href="customs-excise-clearance.html">Customs &amp; Excise Clearance</a></li>
+            <li><a href="warehousing.html">Warehousing</a></li>
+          </ul>
+        </div>
+
+        <div class="col-md-3">
+          <h6>Credentials</h6>
+          <p class="small mb-1">
+            <strong>An ISO 9001:2008 Certified Company</strong>
+          </p>
+          <p class="small mb-0">
+            We are committed to operating with integrity, honesty and transparency,
+            delivering high-quality logistics solutions, shipment after shipment.
+          </p>
+        </div>
+      </div>
+
+      <div class="ww-footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <span>© <span id="yearNow"></span> Windwalker Logistics Solutions Pvt. Ltd. All rights reserved.</span>
+        <span>Designed for performance, visibility &amp; reliability in global logistics.</span>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Global site JS -->
+  <script src="js/script.js"></script>
+</body>
+</html>
