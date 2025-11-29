@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <title>Air Freight | Windwalker Logistics Solutions Pvt. Ltd.</title>
+  <title>Customs &amp; Excise Clearance | Windwalker Logistics Solutions Pvt. Ltd.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Bootstrap CSS -->
@@ -12,35 +13,22 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet" />
 
   <!-- Global site styles -->
-  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-   <!-- ============== TOP BAR ============== -->
+  <!-- ============== TOPBAR ============== -->
   <div class="ww-topbar py-1">
     <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
       <div class="d-flex flex-wrap align-items-center gap-2">
-        <span class="me-2">
-          24x7 Customer Care: <strong>+91 8800389126</strong>
-        </span>
-        <span class="d-none d-md-inline text-secondary">
-          | An ISO 9001:2008 Certified Company
-        </span>
+        <span class="me-2">24x7 Customer Care: <strong>+91 8800389126</strong></span>
+        <span class="d-none d-md-inline text-secondary">| An ISO 9001:2008 Certified Company</span>
       </div>
       <div class="d-flex flex-wrap align-items-center gap-2">
-        <span class="ww-time-pill">
-          <span class="me-1">🇮🇳 India</span>
-          <span id="timeIndia">--:--</span>
-        </span>
-        <span class="ww-time-pill">
-          <span class="me-1">🇨🇳 China</span>
-          <span id="timeChina">--:--</span>
-        </span>
-        <span class="ww-time-pill">
-          <span class="me-1">🇦🇪 Dubai</span>
-          <span id="timeDubai">--:--</span>
-        </span>
+        <span class="ww-time-pill">🇮🇳 <span id="timeIndia">--:--</span></span>
+        <span class="ww-time-pill">🇨🇳 <span id="timeChina">--:--</span></span>
+        <span class="ww-time-pill">🇦🇪 <span id="timeDubai">--:--</span></span>
       </div>
     </div>
   </div>
@@ -48,69 +36,37 @@
   <!-- ============== NAVBAR ============== -->
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <span class="ww-logo-wrap">
-          <!-- Update src to your actual logo path -->
           <img src="images/logo.jpg" alt="Windwalker Logistics logo" class="ww-logo-img" />
-          
         </span>
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainNav"
-        aria-controls="mainNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
 
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="servicesDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Services
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesDropdown">
+            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu dropdown-menu-end">
               <li><a class="dropdown-item" href="air-freight.html">Air Freight</a></li>
               <li><a class="dropdown-item" href="ocean-freight.html">Ocean Freight</a></li>
               <li><a class="dropdown-item" href="trucking.html">Trucking</a></li>
               <li><a class="dropdown-item" href="customs-brokerage.html">Customs Brokerage</a></li>
-              <li><a class="dropdown-item" href="customs-excise-clearance.html">Customs &amp; Excise Clearance</a></li>
+              <li><a class="dropdown-item active" href="customs-excise-clearance.html">Customs &amp; Excise Clearance</a></li>
               <li><a class="dropdown-item" href="warehousing.html">Warehousing</a></li>
             </ul>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
         </ul>
 
-        <div class="d-flex align-items-center ms-lg-3 mt-2 mt-lg-0 gap-2">
-          <button class="btn btn-sm ww-cta-phone d-none d-lg-inline-flex align-items-center">
-            <i class="bi bi-telephone-outbound me-2"></i>
-            +91 8800389126
-          </button>
-          <a href="#quote" class="btn btn-sm btn-ww-primary">
-            Request a Quote
-          </a>
-        </div>
+        <a href="contact.html" class="btn btn-sm btn-ww-primary ms-lg-3">Request a Quote</a>
       </div>
     </div>
   </nav>
@@ -118,80 +74,95 @@
   <!-- ============== HERO BANNER ============== -->
   <section class="ww-section bg-ww-dark text-white">
     <div class="container">
-      <p class="ww-eyebrow mb-2" style="color:#cbd5f5;">Air Freight Services</p>
+      <p class="ww-eyebrow mb-2" style="color:#cbd5f5;">Customs &amp; Excise Clearance</p>
       <h1 class="ww-section-title mb-2" style="color:#f9fafb;">
-        Fast, reliable and secure global air freight solutions.
+        End-to-end customs &amp; excise support for compliant trade operations.
       </h1>
       <p class="ww-section-subtitle mb-0" style="color:#e5edf5;">
-        When speed and reliability matter the most, our air freight team ensures your cargo
-        moves on time, with complete visibility and compliance across all major trade lanes.
+        From licenses and bonds to audit support and regulatory advisory, Windwalker
+        Logistics helps you stay aligned with evolving customs and excise rules while
+        keeping your cargo moving.
       </p>
     </div>
   </section>
 
-  <!-- ============== INTRO SECTION WITH IMAGE ============== -->
+  <!-- ============== INTRO WITH IMAGE ============== -->
   <section class="ww-section">
     <div class="container">
       <div class="row g-4 align-items-center">
+
         <div class="col-lg-6">
-          <h2 class="ww-section-title mb-3">
-            Your trusted partner for time-critical shipments.
-          </h2>
+          <h2 class="ww-section-title mb-3">Compliance that protects your cargo and your business.</h2>
           <p class="ww-section-subtitle">
-            Windwalker Logistics provides airport-to-airport, door-to-door and multimodal
-            air freight services designed around your timelines and cargo requirements.
+            Customs and indirect tax regulations are constantly changing. Our customs
+            &amp; excise specialists work as an extension of your team to interpret
+            notifications, manage licenses and ensure every shipment is aligned with
+            current laws and procedures.
           </p>
           <p class="ww-section-subtitle">
-            From handling export/import documentation to coordinating with global airline
-            partners, our experienced operations team ensures speed, compliance and
-            reliability on every shipment.
+            We support importers, exporters and manufacturers with ongoing advisory,
+            documentation review and representation before authorities, reducing the
+            risk of delays, penalties or disputes.
           </p>
+
           <ul class="ww-service-text ps-3 mt-2">
-            <li>Express, priority, deferred and consolidated air freight options</li>
-            <li>Handling of general, high-value, pharmaceutical & sensitive cargo</li>
-            <li>Customs clearance at origin and destination</li>
-            <li>Multi-leg routing & trans-shipment planning</li>
-            <li>24x7 tracking and proactive status updates</li>
+            <li>Assistance with registrations, licenses &amp; bonds</li>
+            <li>Excise &amp; indirect tax documentation review</li>
+            <li>Support for audits, queries &amp; assessments</li>
+            <li>Regulatory updates and impact analysis</li>
+            <li>Advisory on duty benefits, exemptions &amp; schemes</li>
           </ul>
         </div>
 
         <div class="col-lg-6">
-          <img src="images/air-freight.jpg" class="img-fluid rounded-4 shadow-sm" alt="Air Freight Service Image" />
+          <img src="images/customs-excise-main.jpg" class="img-fluid rounded-4 shadow-sm"
+               alt="Customs &amp; Excise Clearance">
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ============== FEATURE IMAGES SECTION ============== -->
+  <!-- ============== FEATURE BLOCKS ============== -->
   <section class="ww-section bg-white">
     <div class="container">
       <div class="row g-4">
+
+        <!-- Block 1 -->
         <div class="col-md-4">
-          <img src="images/air-cargo-loading.png" class="img-fluid rounded-4 mb-3 shadow-sm" alt="Air Cargo Loading" />
-          <h3 class="ww-service-title mb-1">Airport Handling Expertise</h3>
+          <img src="images/customs-excise-licenses.jpg" class="img-fluid rounded-4 mb-3 shadow-sm"
+               alt="Licenses & Bonds">
+          <h3 class="ww-service-title mb-1">Licenses, bonds &amp; registrations</h3>
           <p class="ww-service-text">
-            We manage the full export/import process including screening, documentation,
-            palletization and airline coordination.
+            Guidance and assistance for obtaining and maintaining relevant customs
+            and excise registrations, licenses, bonds and approvals needed for
+            smooth operations.
           </p>
         </div>
 
+        <!-- Block 2 -->
         <div class="col-md-4">
-          <img src="images/air-network.jpg" class="img-fluid rounded-4 mb-3 shadow-sm" alt="Air Network" />
-          <h3 class="ww-service-title mb-1">Global Airline Network</h3>
+          <img src="images/customs-excise-audit.jpg" class="img-fluid rounded-4 mb-3 shadow-sm"
+               alt="Audit & Documentation Support">
+          <h3 class="ww-service-title mb-1">Audit &amp; documentation support</h3>
           <p class="ww-service-text">
-            Strong relationships with premium air carriers ensure competitive pricing
-            and priority uplift during peak seasons.
+            Structured record-keeping, documentation checks and preparation for
+            departmental audits or inspections, helping you respond confidently.
           </p>
         </div>
 
+        <!-- Block 3 -->
         <div class="col-md-4">
-          <img src="images/secure-air.jpg" class="img-fluid rounded-4 mb-3 shadow-sm" alt="Secure Air Freight" />
-          <h3 class="ww-service-title mb-1">Secure & High-Value Cargo</h3>
+          <img src="images/customs-excise-advisory.jpg" class="img-fluid rounded-4 mb-3 shadow-sm"
+               alt="Regulatory Advisory">
+          <h3 class="ww-service-title mb-1">Regulatory &amp; duty advisory</h3>
           <p class="ww-service-text">
-            Specialized handling for electronics, pharma, perishables and sensitive
-            cargo requiring strict temperature or security controls.
+            Ongoing updates on changes in customs, GST and excise regulations with
+            practical guidance on how they impact your import, export or manufacturing
+            flows.
           </p>
         </div>
+
       </div>
     </div>
   </section>
@@ -199,60 +170,69 @@
   <!-- ============== PROCESS STEPS ============== -->
   <section class="ww-section">
     <div class="container">
+
       <div class="ww-section-header mb-4">
-        <p class="ww-eyebrow mb-1">How it works</p>
-        <h2 class="ww-section-title mb-2">Our Air Freight Process</h2>
+        <p class="ww-eyebrow mb-1">How we assist</p>
+        <h2 class="ww-section-title mb-2">Our Customs &amp; Excise Support Approach</h2>
       </div>
 
       <div class="col-lg-8">
+
         <div class="ww-step">
           <div class="ww-step-dot"></div>
-          <div class="ww-step-label">1. Cargo Assessment</div>
+          <div class="ww-step-label">1. Understanding your operations</div>
           <p class="ww-step-text mb-0">
-            We evaluate shipment size, urgency, handling needs and airline availability
-            to propose the optimal routing.
+            We review your import/export flows, manufacturing activities, HS codes
+            and existing registrations to map your compliance landscape.
           </p>
         </div>
 
         <div class="ww-step">
           <div class="ww-step-dot"></div>
-          <div class="ww-step-label">2. Booking & Documentation</div>
+          <div class="ww-step-label">2. Compliance gap &amp; risk analysis</div>
           <p class="ww-step-text mb-0">
-            Our team handles bookings, MAWB/HAWB creation, export documents and compliance checks.
+            Potential gaps or process risks are highlighted and prioritized, with
+            recommendations for corrective actions and process improvements.
           </p>
         </div>
 
         <div class="ww-step">
           <div class="ww-step-dot"></div>
-          <div class="ww-step-label">3. Airport Handling & Uplift</div>
+          <div class="ww-step-label">3. Implementation &amp; documentation</div>
           <p class="ww-step-text mb-0">
-            Screening, palletizing, airline coordination and cargo acceptance are managed end-to-end.
+            We help implement SOPs, documentation controls and record-keeping
+            practices to align your operations with regulatory expectations.
           </p>
         </div>
 
         <div class="ww-step">
           <div class="ww-step-dot"></div>
-          <div class="ww-step-label">4. Tracking & Delivery</div>
+          <div class="ww-step-label">4. Ongoing advisory &amp; representation</div>
           <p class="ww-step-text mb-0">
-            Real-time updates and final POD shared upon cargo arrival or doorstep delivery.
+            Continuous support for audits, notices, clarifications and changes in
+            law, acting as your partner before customs and excise authorities.
           </p>
         </div>
+
       </div>
+
     </div>
   </section>
 
   <!-- ============== CTA BAND ============== -->
   <section class="ww-section pt-0">
     <div class="container">
+
       <div class="ww-cta-band d-flex flex-column flex-lg-row justify-content-between align-items-start gap-3">
         <div>
-          <p class="ww-eyebrow mb-1" style="color:#e5edf5;">Planning a shipment?</p>
+          <p class="ww-eyebrow mb-1" style="color:#e5edf5;">Need help with customs &amp; excise?</p>
           <h3 class="mb-2" style="font-size:1.3rem;">
-            Get a fast and competitive air freight quote.
+            Talk to our compliance and regulatory team.
           </h3>
           <p class="mb-0" style="font-size:0.9rem;color:#cbd5f5;">
-            Share your shipment details and our team will revert with routing,
-            airline options and rates.
+            Share your current challenges or upcoming projects, and we will work with
+            you to design a compliant, efficient and future-ready customs &amp; excise
+            framework.
           </p>
         </div>
 
@@ -260,28 +240,30 @@
           <form class="row g-2 g-md-3">
             <div class="col-md-6">
               <label class="form-label small text-light mb-1">Name</label>
-              <input type="text" class="form-control form-control-sm" placeholder="Your full name" />
+              <input type="text" class="form-control form-control-sm" placeholder="Your full name">
             </div>
             <div class="col-md-6">
               <label class="form-label small text-light mb-1">Email</label>
-              <input type="email" class="form-control form-control-sm" placeholder="you@company.com" />
+              <input type="email" class="form-control form-control-sm" placeholder="you@company.com">
             </div>
             <div class="col-md-6">
               <label class="form-label small text-light mb-1">Phone</label>
-              <input type="tel" class="form-control form-control-sm" placeholder="+91 ..." />
+              <input type="tel" class="form-control form-control-sm" placeholder="+91 ...">
             </div>
             <div class="col-md-6">
-              <label class="form-label small text-light mb-1">Cargo Type</label>
-              <input type="text" class="form-control form-control-sm" placeholder="e.g. Electronics, Pharma" />
+              <label class="form-label small text-light mb-1">Area of support</label>
+              <input type="text" class="form-control form-control-sm"
+                     placeholder="Licenses, audit, advisory, etc.">
             </div>
             <div class="col-12">
-              <label class="form-label small text-light mb-1">Brief Requirement</label>
+              <label class="form-label small text-light mb-1">Brief requirement</label>
               <textarea class="form-control form-control-sm" rows="2"></textarea>
             </div>
+
             <div class="col-12 d-flex justify-content-between align-items-center">
               <div class="form-check text-light small">
-                <input class="form-check-input" type="checkbox" id="agree1" checked />
-                <label class="form-check-label" for="agree1">
+                <input class="form-check-input" type="checkbox" id="agreeCEC" checked>
+                <label class="form-check-label" for="agreeCEC">
                   I agree to be contacted by Windwalker Logistics.
                 </label>
               </div>
@@ -291,6 +273,7 @@
         </div>
 
       </div>
+
     </div>
   </section>
 
@@ -302,7 +285,7 @@
         <div class="col-md-4">
           <span class="ww-logo-wrap">
             <img src="images/logo.jpg" class="ww-logo-img" />
-            <span class="fw-semibold text-white">Windwalker Logistics</span>
+            
           </span>
           <p class="small mt-2 mb-2">
             Tailor-made freight and logistics solutions for global businesses.
@@ -341,12 +324,12 @@
         <span>© <span id="yearNow"></span> Windwalker Logistics Solutions Pvt. Ltd. All rights reserved.</span>
         <span>Designed for performance &amp; reliability in global logistics.</span>
       </div>
+
     </div>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Global JS -->
   <script src="js/script.js"></script>
 </body>
 

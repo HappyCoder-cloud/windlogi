@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <title>Air Freight | Windwalker Logistics Solutions Pvt. Ltd.</title>
+  <title>Ocean Freight | Windwalker Logistics Solutions Pvt. Ltd.</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
 
   <!-- Bootstrap CSS -->
@@ -17,30 +18,17 @@
 
 <body>
 
-   <!-- ============== TOP BAR ============== -->
+  <!-- ============== TOPBAR ============== -->
   <div class="ww-topbar py-1">
     <div class="container d-flex flex-wrap justify-content-between align-items-center gap-2">
       <div class="d-flex flex-wrap align-items-center gap-2">
-        <span class="me-2">
-          24x7 Customer Care: <strong>+91 8800389126</strong>
-        </span>
-        <span class="d-none d-md-inline text-secondary">
-          | An ISO 9001:2008 Certified Company
-        </span>
+        <span class="me-2">24x7 Customer Care: <strong>+91 8800389126</strong></span>
+        <span class="d-none d-md-inline text-secondary">| An ISO 9001:2008 Certified Company</span>
       </div>
       <div class="d-flex flex-wrap align-items-center gap-2">
-        <span class="ww-time-pill">
-          <span class="me-1">🇮🇳 India</span>
-          <span id="timeIndia">--:--</span>
-        </span>
-        <span class="ww-time-pill">
-          <span class="me-1">🇨🇳 China</span>
-          <span id="timeChina">--:--</span>
-        </span>
-        <span class="ww-time-pill">
-          <span class="me-1">🇦🇪 Dubai</span>
-          <span id="timeDubai">--:--</span>
-        </span>
+        <span class="ww-time-pill">🇮🇳 <span id="timeIndia">--:--</span></span>
+        <span class="ww-time-pill">🇨🇳 <span id="timeChina">--:--</span></span>
+        <span class="ww-time-pill">🇦🇪 <span id="timeDubai">--:--</span></span>
       </div>
     </div>
   </div>
@@ -48,48 +36,27 @@
   <!-- ============== NAVBAR ============== -->
   <nav class="navbar navbar-expand-lg sticky-top">
     <div class="container">
-      <a class="navbar-brand" href="#">
+      <a class="navbar-brand" href="index.html">
         <span class="ww-logo-wrap">
-          <!-- Update src to your actual logo path -->
           <img src="images/logo.jpg" alt="Windwalker Logistics logo" class="ww-logo-img" />
-          
+         
         </span>
       </a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#mainNav"
-        aria-controls="mainNav"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
         <span class="navbar-toggler-icon"></span>
       </button>
 
       <div class="collapse navbar-collapse" id="mainNav">
         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="about.html">About Us</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
 
           <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="servicesDropdown"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Services
-            </a>
-            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="servicesDropdown">
+            <a class="nav-link dropdown-toggle active" href="#" data-bs-toggle="dropdown">Services</a>
+            <ul class="dropdown-menu dropdown-menu-end">
               <li><a class="dropdown-item" href="air-freight.html">Air Freight</a></li>
-              <li><a class="dropdown-item" href="ocean-freight.html">Ocean Freight</a></li>
+              <li><a class="dropdown-item active" href="ocean-freight.html">Ocean Freight</a></li>
               <li><a class="dropdown-item" href="trucking.html">Trucking</a></li>
               <li><a class="dropdown-item" href="customs-brokerage.html">Customs Brokerage</a></li>
               <li><a class="dropdown-item" href="customs-excise-clearance.html">Customs &amp; Excise Clearance</a></li>
@@ -97,20 +64,10 @@
             </ul>
           </li>
 
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
         </ul>
 
-        <div class="d-flex align-items-center ms-lg-3 mt-2 mt-lg-0 gap-2">
-          <button class="btn btn-sm ww-cta-phone d-none d-lg-inline-flex align-items-center">
-            <i class="bi bi-telephone-outbound me-2"></i>
-            +91 8800389126
-          </button>
-          <a href="#quote" class="btn btn-sm btn-ww-primary">
-            Request a Quote
-          </a>
-        </div>
+        <a href="contact.html" class="btn btn-sm btn-ww-primary ms-lg-3">Request a Quote</a>
       </div>
     </div>
   </nav>
@@ -118,80 +75,87 @@
   <!-- ============== HERO BANNER ============== -->
   <section class="ww-section bg-ww-dark text-white">
     <div class="container">
-      <p class="ww-eyebrow mb-2" style="color:#cbd5f5;">Air Freight Services</p>
+      <p class="ww-eyebrow mb-2" style="color:#cbd5f5;">Ocean Freight Services</p>
       <h1 class="ww-section-title mb-2" style="color:#f9fafb;">
-        Fast, reliable and secure global air freight solutions.
+        Efficient, scalable and cost-optimized ocean freight for global trade.
       </h1>
       <p class="ww-section-subtitle mb-0" style="color:#e5edf5;">
-        When speed and reliability matter the most, our air freight team ensures your cargo
-        moves on time, with complete visibility and compliance across all major trade lanes.
+        Whether it is FCL, LCL, special equipment or break-bulk cargo, our global
+        ocean network ensures reliable container movement with complete visibility
+        and documentation support.
       </p>
     </div>
   </section>
 
-  <!-- ============== INTRO SECTION WITH IMAGE ============== -->
+  <!-- ============== INTRO WITH IMAGE ============== -->
   <section class="ww-section">
     <div class="container">
       <div class="row g-4 align-items-center">
+
         <div class="col-lg-6">
-          <h2 class="ww-section-title mb-3">
-            Your trusted partner for time-critical shipments.
-          </h2>
+          <h2 class="ww-section-title mb-3">Reliable solutions for every ocean shipment.</h2>
           <p class="ww-section-subtitle">
-            Windwalker Logistics provides airport-to-airport, door-to-door and multimodal
-            air freight services designed around your timelines and cargo requirements.
+            With strong partnerships across major global shipping lines, Windwalker
+            Logistics delivers predictable transit schedules, competitive rates and
+            flexible ocean freight options tailored to your supply chain.
           </p>
           <p class="ww-section-subtitle">
-            From handling export/import documentation to coordinating with global airline
-            partners, our experienced operations team ensures speed, compliance and
-            reliability on every shipment.
+            Our experienced customer service and documentation teams ensure your cargo
+            moves seamlessly through ports, customs, CFS/ICD, and last-mile delivery.
           </p>
+
           <ul class="ww-service-text ps-3 mt-2">
-            <li>Express, priority, deferred and consolidated air freight options</li>
-            <li>Handling of general, high-value, pharmaceutical & sensitive cargo</li>
-            <li>Customs clearance at origin and destination</li>
-            <li>Multi-leg routing & trans-shipment planning</li>
-            <li>24x7 tracking and proactive status updates</li>
+            <li>FCL (Full Container Load) &amp; LCL (Less-than-Container Load)</li>
+            <li>Break-bulk, ODC, flat rack &amp; open-top cargo handling</li>
+            <li>Port-to-port, door-to-door &amp; multimodal freight options</li>
+            <li>Carrier selection, rate negotiation &amp; priority space allocation</li>
+            <li>Export/import customs clearance &amp; documentation support</li>
           </ul>
         </div>
 
         <div class="col-lg-6">
-          <img src="images/air-freight.jpg" class="img-fluid rounded-4 shadow-sm" alt="Air Freight Service Image" />
+          <img src="images/ocean-freight-main.jpg" class="img-fluid rounded-4 shadow-sm" alt="Ocean Freight Image">
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- ============== FEATURE IMAGES SECTION ============== -->
+  <!-- ============== FEATURE BLOCKS ============== -->
   <section class="ww-section bg-white">
     <div class="container">
       <div class="row g-4">
+
+        <!-- Block 1 -->
         <div class="col-md-4">
-          <img src="images/air-cargo-loading.png" class="img-fluid rounded-4 mb-3 shadow-sm" alt="Air Cargo Loading" />
-          <h3 class="ww-service-title mb-1">Airport Handling Expertise</h3>
+          <img src="images/ocean-containers.jpg" class="img-fluid rounded-4 mb-3 shadow-sm" alt="Container Logistics">
+          <h3 class="ww-service-title mb-1">Global Carrier Partnerships</h3>
           <p class="ww-service-text">
-            We manage the full export/import process including screening, documentation,
-            palletization and airline coordination.
+            Access to premium ocean carriers enables reliable sailings, secured slots
+            during peak periods and optimized routing across major trade lanes.
           </p>
         </div>
 
+        <!-- Block 2 -->
         <div class="col-md-4">
-          <img src="images/air-network.jpg" class="img-fluid rounded-4 mb-3 shadow-sm" alt="Air Network" />
-          <h3 class="ww-service-title mb-1">Global Airline Network</h3>
+          <img src="images/ocean-port-operations.jpg" class="img-fluid rounded-4 mb-3 shadow-sm" alt="Port Operations">
+          <h3 class="ww-service-title mb-1">Port, CFS &amp; ICD Expertise</h3>
           <p class="ww-service-text">
-            Strong relationships with premium air carriers ensure competitive pricing
-            and priority uplift during peak seasons.
+            From port handling to CFS de-stuffing and inland ICD transfers, our team
+            ensures complete management of your container movement.
           </p>
         </div>
 
+        <!-- Block 3 -->
         <div class="col-md-4">
-          <img src="images/secure-air.jpg" class="img-fluid rounded-4 mb-3 shadow-sm" alt="Secure Air Freight" />
-          <h3 class="ww-service-title mb-1">Secure & High-Value Cargo</h3>
+          <img src="images/ocean-breakbulk.jpg" class="img-fluid rounded-4 mb-3 shadow-sm" alt="Break Bulk Cargo">
+          <h3 class="ww-service-title mb-1">Specialized &amp; Break-bulk Cargo</h3>
           <p class="ww-service-text">
-            Specialized handling for electronics, pharma, perishables and sensitive
-            cargo requiring strict temperature or security controls.
+            End-to-end handling for heavy-lift, project cargo, machinery and over-dimensional
+            freight requiring advanced planning and supervision.
           </p>
         </div>
+
       </div>
     </div>
   </section>
@@ -199,44 +163,50 @@
   <!-- ============== PROCESS STEPS ============== -->
   <section class="ww-section">
     <div class="container">
+
       <div class="ww-section-header mb-4">
         <p class="ww-eyebrow mb-1">How it works</p>
-        <h2 class="ww-section-title mb-2">Our Air Freight Process</h2>
+        <h2 class="ww-section-title mb-2">Our Ocean Freight Workflow</h2>
       </div>
 
       <div class="col-lg-8">
+
         <div class="ww-step">
           <div class="ww-step-dot"></div>
-          <div class="ww-step-label">1. Cargo Assessment</div>
+          <div class="ww-step-label">1. Cargo Planning &amp; Routing</div>
           <p class="ww-step-text mb-0">
-            We evaluate shipment size, urgency, handling needs and airline availability
-            to propose the optimal routing.
+            Based on cargo size, commodity and urgency, we propose optimized FCL/LCL
+            routes with carrier options and transit schedules.
           </p>
         </div>
 
         <div class="ww-step">
           <div class="ww-step-dot"></div>
-          <div class="ww-step-label">2. Booking & Documentation</div>
+          <div class="ww-step-label">2. Booking &amp; Documentation</div>
           <p class="ww-step-text mb-0">
-            Our team handles bookings, MAWB/HAWB creation, export documents and compliance checks.
+            We manage BL/MBL, SI/EDI filing, VGM, certificates, and customs compliance
+            at origin and destination.
           </p>
         </div>
 
         <div class="ww-step">
           <div class="ww-step-dot"></div>
-          <div class="ww-step-label">3. Airport Handling & Uplift</div>
+          <div class="ww-step-label">3. Container Movement</div>
           <p class="ww-step-text mb-0">
-            Screening, palletizing, airline coordination and cargo acceptance are managed end-to-end.
+            Coordination across ports, CFS, ICDs, carriers and transporters ensures
+            seamless loading, sailing and unloading cycles.
           </p>
         </div>
 
         <div class="ww-step">
           <div class="ww-step-dot"></div>
-          <div class="ww-step-label">4. Tracking & Delivery</div>
+          <div class="ww-step-label">4. Delivery &amp; Status Updates</div>
           <p class="ww-step-text mb-0">
-            Real-time updates and final POD shared upon cargo arrival or doorstep delivery.
+            Real-time tracking, milestone updates and POD sharing after successful
+            cargo delivery.
           </p>
         </div>
+
       </div>
     </div>
   </section>
@@ -244,15 +214,14 @@
   <!-- ============== CTA BAND ============== -->
   <section class="ww-section pt-0">
     <div class="container">
+
       <div class="ww-cta-band d-flex flex-column flex-lg-row justify-content-between align-items-start gap-3">
         <div>
-          <p class="ww-eyebrow mb-1" style="color:#e5edf5;">Planning a shipment?</p>
-          <h3 class="mb-2" style="font-size:1.3rem;">
-            Get a fast and competitive air freight quote.
-          </h3>
+          <p class="ww-eyebrow mb-1" style="color:#e5edf5;">Need pricing?</p>
+          <h3 class="mb-2" style="font-size:1.3rem;">Request a competitive ocean freight quote.</h3>
           <p class="mb-0" style="font-size:0.9rem;color:#cbd5f5;">
-            Share your shipment details and our team will revert with routing,
-            airline options and rates.
+            Share your cargo details and our team will provide optimized FCL/LCL 
+            routing and rates.
           </p>
         </div>
 
@@ -260,37 +229,40 @@
           <form class="row g-2 g-md-3">
             <div class="col-md-6">
               <label class="form-label small text-light mb-1">Name</label>
-              <input type="text" class="form-control form-control-sm" placeholder="Your full name" />
+              <input type="text" class="form-control form-control-sm" placeholder="Your full name">
             </div>
             <div class="col-md-6">
               <label class="form-label small text-light mb-1">Email</label>
-              <input type="email" class="form-control form-control-sm" placeholder="you@company.com" />
+              <input type="email" class="form-control form-control-sm" placeholder="you@company.com">
             </div>
             <div class="col-md-6">
               <label class="form-label small text-light mb-1">Phone</label>
-              <input type="tel" class="form-control form-control-sm" placeholder="+91 ..." />
+              <input type="tel" class="form-control form-control-sm" placeholder="+91 ...">
             </div>
             <div class="col-md-6">
               <label class="form-label small text-light mb-1">Cargo Type</label>
-              <input type="text" class="form-control form-control-sm" placeholder="e.g. Electronics, Pharma" />
+              <input type="text" class="form-control form-control-sm" placeholder="e.g. FCL / LCL / ODC">
             </div>
             <div class="col-12">
-              <label class="form-label small text-light mb-1">Brief Requirement</label>
+              <label class="form-label small text-light mb-1">Message</label>
               <textarea class="form-control form-control-sm" rows="2"></textarea>
             </div>
+
             <div class="col-12 d-flex justify-content-between align-items-center">
               <div class="form-check text-light small">
-                <input class="form-check-input" type="checkbox" id="agree1" checked />
-                <label class="form-check-label" for="agree1">
+                <input class="form-check-input" type="checkbox" id="agreeOcean" checked>
+                <label class="form-check-label" for="agreeOcean">
                   I agree to be contacted by Windwalker Logistics.
                 </label>
               </div>
               <button type="submit" class="btn btn-sm btn-ww-primary mt-2 mt-md-0">Submit enquiry</button>
             </div>
+
           </form>
         </div>
 
       </div>
+
     </div>
   </section>
 
@@ -298,11 +270,10 @@
   <footer class="ww-footer">
     <div class="container">
       <div class="row g-4">
-
         <div class="col-md-4">
           <span class="ww-logo-wrap">
             <img src="images/logo.jpg" class="ww-logo-img" />
-            <span class="fw-semibold text-white">Windwalker Logistics</span>
+            
           </span>
           <p class="small mt-2 mb-2">
             Tailor-made freight and logistics solutions for global businesses.
@@ -334,19 +305,18 @@
           <h6>Credentials</h6>
           <p class="small mb-0">An ISO 9001:2008 Certified Company</p>
         </div>
-
       </div>
 
       <div class="ww-footer-bottom mt-3 d-flex flex-column flex-md-row justify-content-between">
         <span>© <span id="yearNow"></span> Windwalker Logistics Solutions Pvt. Ltd. All rights reserved.</span>
         <span>Designed for performance &amp; reliability in global logistics.</span>
       </div>
+
     </div>
   </footer>
 
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <!-- Global JS -->
   <script src="js/script.js"></script>
 </body>
 
